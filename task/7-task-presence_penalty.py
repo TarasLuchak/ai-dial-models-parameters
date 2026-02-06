@@ -11,8 +11,9 @@ from task.app.main import run
 run(
     deployment_name='gpt-4o',
     print_only_content=True,
-    # TODO:
-    #  Use `presence_penalty` parameter with different range (-2.0 to 2.0)
+    # Try changing `presence_penalty` between -2.0 and 2.0 across different runs.
+    # Higher values generally encourage the model to introduce new topics.
+    presence_penalty=1.5,
 )
 
 # In the final result, we can see that the higher `presence_penalty` (2.0) the more LLM is trying to add topics that

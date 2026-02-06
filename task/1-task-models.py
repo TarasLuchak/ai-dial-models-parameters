@@ -12,9 +12,11 @@ from task.app.main import run
 # - gemini-2.5-pro
 
 run(
-    deployment_name='INSERT_DEPLOYMENT_NAME',
-    print_request=False, # Switch to False if you do not want to see the request in console
-    print_only_content=False, # Switch to True if you want to see only content from response
+    # Start with `gpt-4o` and then change `deployment_name`
+    # to the other models above to compare behaviour.
+    deployment_name="gpt-4o",
+    print_request=False,  # Switch to False if you do not want to see the request in console
+    print_only_content=False,  # Switch to True if you want to see only content from response
 )
 
 # The main goal of this task is to explore the functional capabilities of DIAL to be able to work with different

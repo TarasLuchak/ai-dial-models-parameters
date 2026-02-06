@@ -11,9 +11,10 @@ from task.app.main import run
 # - gemini-2.5-pro
 
 run(
-    # TODO:
-    #  1. Provide `deployment_name` with model from the list above👆
-    #  2. Use `n` parameter with value in range from 1 to 5!
+    # You can change `deployment_name` to any model from the list above 👆
+    deployment_name="gpt-4o",
+    # Try different values from 1 to 5 to see how many choices you get back.
+    n=3,
 )
 
 # Pay attention to the number of choices in the response!
